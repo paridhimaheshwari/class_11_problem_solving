@@ -472,10 +472,124 @@ print("the integer_input + string_digits= sum", num+int(digit))
     
 
 #%%
+length=float(input("Enter the length in cm"))
+if length<=0:
+    print("The entry is invalid")
+else:
+    a=length/2.54
+    print(a, "inch")
+    
+#%%2
+n=int(input("Enter number of goods purchased"))
+if n<10:
+    print("the total cost is", n*120)
+if 10<=n<=99:
+    print("the total cost is", n*100)
+if n>100:
+    print("the total cost is", n*70)
+    
+#%%
+n=int(input("Enter a digit"))
+if n==0:
+    print("zero")
+if n==1:
+    print("one")
+if n==2:
+    print("two")
+if n==3:
+    print("three")
+if n==4:
+    print("four")
+if n==5:
+    print("five")
+if n==6:
+    print("six")
+if n==7:
+    print("seven")
+if n==8:
+    print("eight")
+if n==9:
+    print("nine")
 
 
+#%%
+n=int(input("enter a square number"))
+import math
+sqRoot= math.sqrt(n)
+print("the square root of the number you entered is", sqRoot)
+for i in range (2,int(sqRoot)):
+    if (sqRoot%i)==0:
+        print("It's not prime")
+        break
+else:
+    print("It's prime")
+    
+    
+#%%
+year=int(input("Enter a year"))
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print("leap year")
+        else:
+            print("not a leap")     
+    else:
+        print("leap Year")
+else:
+    print("Leap not")
+
+ 
+#%%
+first=int(input("Enter the first side"))
+second=int(input("Enter the second side"))
+third=int(input("Enter the third side"))
+if first+second>third:
+    if second+third>first:
+        if third+first>second:
+             print("These sides will form a triangle")
+        else:
+            print("These sides will not form a triangle")
+    else:
+        print("These sides will not form a triangle")
+else:
+    print("Cannot form a triangle")
 
 
+#%%
+hour=int(input("Enter hours between 1-12:"))
+ahead=int(input("Enter number of hours ahead"))
+if (hour+ahead)>12:
+    print("Time at that time would be", (hour+ahead)%12, " o'clock")
+if (hour+ahead)<12:
+    print("Time at that time would be", (hour+ahead), " o'clock")
+if (hour+ahead)==12:
+    print("Time at that time would be", "12 o'clock")
+    
+#%%
+a=int(input("Enter a starting number"))
+d=int(input("Enter a common difference"))
+n=int(input("Enter number of terms"))
+f=a
+print(f, end=" ")
+for i in range(1,n):
+    a+=d
+    print(a, end=" ")
+    
+
+
+#%%
+n=float(input("Enter first number"))
+p=float(input("Enter second number"))
+for i in range(n-0.001,):
+    
+    
+#%%
+ n=int(input("Enter number of terms"))
+ a=1
+ print(a, end=" ")
+for i in range(1,n):
+    a+=2
+    print(a, end=" ")
 
 
         
